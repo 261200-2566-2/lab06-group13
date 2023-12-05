@@ -17,7 +17,7 @@ public class Character1 {
 
 
 
-    /** เป็น method ที่ทำการคืนค่า Mana ปัจจุบันออกมาก
+    /** เป็น method ที่ทำการคืนค่า Mana ปัจจุบันของตัวละครออกมาก
      * @return ค่าของ Mana ออกมาก
      */
     public double getMana() {
@@ -26,7 +26,7 @@ public class Character1 {
 
 
 
-    /** เป็น method เพิ่มค่าต่างๆของตัวละคร
+    /** เป็น method เพิ่ม level และ เพิ่มค่าต่างๆของตัวละคร
      * effects: ทำการเพิ่มค่าต่างๆของ ตัวละคร
      */
     public void levelUp() {
@@ -107,7 +107,7 @@ public class Character1 {
 
     /** เป็น method ที่ทำการใส่แหว่นให้ตัวละคร
      * @param ring เป็นแหว่นที่เราต้องการที่จะใส่ให้กับตัวละคร
-     * effects: ทำการใส่แหว่นให้ตัวละคร
+     * effects: ทำการใส่แหว่นให้ตัวละคร เปลี่ยนค่าของตัวเเปล ring ใน class
      * effects: ทำการมอบ effect ให้ตัวละคร
      * */
     public  void EquipAccessories(Ring ring){
