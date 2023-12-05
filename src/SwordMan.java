@@ -1,10 +1,26 @@
 public class SwordMan extends Character1 implements Human{
+
+    /** เป็น method ที่ทำการตั้งสถาณะเริ่มต้นให้กับตัวละคร */
    public SwordMan(String name){
         super(name);
    }
+
+
+    /** เป็น method เพิ่ม level เเละค่าต่างๆ
+     * effects: เพิ่ม level
+     * effects: เพิ่ม maxHp
+     * effects: เพิ่ม maxMana
+     * effects: เพิ่ม baseSpeed
+     * effects: เพิ่ม maxBaseSpeed
+     * effects: เพิ่ม speed
+     * effects: เพิ่ม hp
+     * effects: เพิ่ม mana
+     * effects: เพิ่ม intelligence
+     * effects: เพิ่ม stamina
+     */
     @Override
     public void levelUp() {
-        super.levelUp();
+        super.levelUp();//
         intelligence = 100 + 10 * level; //ทำการเพิ่ม ค่าความฉลาดเพิ่มเข้าไปจาก  Constructor
         stamina += 100 +10 * level; // ทำการเพิ่มค่า stamina  เพิ่มเข้าไปจาก Constructor
     }

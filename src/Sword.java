@@ -5,11 +5,15 @@ public class Sword  {
     private double damage;
     private int level;
 
+    /**
+     * เป็น method ที่ทำการ set ค่าเริ่มต้นของ ดาบ */
     public Sword() {
         this.baseDamage = 100;
         this.level = 1;
         updateDamage();
     }
+
+
     /** เป็น method เพิ่ม level และ เพิ่มค่าโจมตีของดาบ
      * effects: ทำการเพิ่ม level ของดาบ
      * effects: เพิ่มพลังโจมตีของดาบ

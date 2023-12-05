@@ -1,7 +1,6 @@
 public class Character1 {
     protected String name;
     protected double level, maxHp, hp, maxMana, mana, baseSpeed,speed, maxBaseSpeed,  intelligence, stamina;
-//    Accessories[] backpack = new Accessories[4];
     protected Ring ring ;
     protected Necklace necklace;
     protected Sword equippedSword ;
@@ -17,8 +16,8 @@ public class Character1 {
 
 
 
-    /** เป็น method ที่ทำการคืนค่า Mana ปัจจุบันของตัวละครออกมาก
-     * @return ค่าของ Mana ออกมาก
+    /** เป็น method ที่ทำการคืนค่า Mana ปัจจุบันของตัวละคร
+     * @return ค่าของ Mana
      */
     public double getMana() {
         return mana;
@@ -26,8 +25,15 @@ public class Character1 {
 
 
 
-    /** เป็น method เพิ่ม level และ เพิ่มค่าต่างๆของตัวละคร
-     * effects: ทำการเพิ่มค่าต่างๆของ ตัวละคร
+    /** เป็น method เพิ่ม level เเละค่าต่างๆ
+     * effects: เพิ่ม level
+     * effects: เพิ่ม maxHp
+     * effects: เพิ่ม maxMana
+     * effects: เพิ่ม baseSpeed
+     * effects: เพิ่ม maxBaseSpeed
+     * effects: เพิ่ม speed
+     * effects: เพิ่ม hp
+     * effects: เพิ่ม mana
      */
     public void levelUp() {
         level++;
@@ -56,6 +62,7 @@ public class Character1 {
 
     /** เป็น method ที่ทำการถอดดาบที่ถือออก
      * effects: ทำการถอดดาบที่ถือออก
+     * effects: เพิ่มความเร็วของตัวละคร
      */
     public void unequipSword() {
         if (equippedSword != null) {
@@ -79,6 +86,7 @@ public class Character1 {
 
     /** เป็น method ที่ทำการถอดโล่ที่ถือออก
      * effects: ทำการถอดโล่ที่ถือออก
+     * effects: เพิ่มความเร็วของตัวละคร
      */
     public  void unquipShield(){
         if (equippedShield != null) {
@@ -88,7 +96,8 @@ public class Character1 {
     }
 
     /** Constructor สร้างตัวละคร
-    * @param name ชื่อของตัวละครที่ต้องการจะตั้ง
+     * @param name ชื่อของตัวละครที่ต้องการจะตั้ง
+     * effects: กำหนด field ของ Character เริ่มต้น
      */
     protected  Character1(String name){
         this.name = name;

@@ -3,6 +3,9 @@ public class Shield {
     private double defense;
     private int level;
 
+
+    /**
+     * เป็น method ที่ทำการ set ค่าเริ่มต้นของ โล่ */
     public Shield() {
         this.baseDefense = 100;
         this.level = 1;
